@@ -6,12 +6,21 @@
     gap: 160px;
   }
   .banner-baseline {
+    max-width: 320px;
+    @include media-min($medium){
+      max-width: 600px;
+    }
+    @include media-min($large){
+      max-width: 900px;
+    }
+
     margin-top: 12vh;
     @include media-min($medium){
       margin-top: 20vh;
     }
   }
   .banner-action {
+    max-width: 900px;
     position: fixed;
     @include media-min($medium) {
       position: unset;
@@ -22,7 +31,6 @@
   }
 }
 .banner-baseline, .banner-action {
-  max-width: 900px;
   display: flex;
   flex-direction: column;
   gap: 24px;
