@@ -1,0 +1,35 @@
+.banner {
+  position: relative;
+  @include media-min($medium) {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+  }
+  .banner-baseline {
+    margin-top: 160px;
+  }
+  .banner-action {
+    @include media-min($medium) {
+      position: unset;
+    }
+    bottom: 0;
+    left: 0;
+    padding-bottom: 48px;
+  }
+}
+.banner-baseline, .banner-action {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  align-items: center;
+}
+
+.banner-baseline h1 {
+  color: $primary;
+}
+
+.banner-action span {
+  color: $primary;
+}

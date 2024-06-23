@@ -1,0 +1,14 @@
+// Breakpoints
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
+
+// Effects
+$box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+@mixin media-min($_min-width) {
+  @media screen and (min-width: $_min-width) {
+    &{ @content; }
+  }
+}
