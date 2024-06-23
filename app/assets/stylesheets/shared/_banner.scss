@@ -6,7 +6,10 @@
     gap: 160px;
   }
   .banner-baseline {
-    margin-top: 160px;
+    margin-top: 12vh;
+    @include media-min($medium){
+      margin-top: 20vh;
+    }
   }
   .banner-action {
     position: fixed;
