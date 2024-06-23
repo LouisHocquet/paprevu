@@ -1,0 +1,13 @@
+.btn {
+  font-weight: 500;
+  font-size: 20px;
+  @include media-min($medium) {
+    width: fit-content;
+    padding: 0 40px;
+  }
+}
+
+.btn-primary {
+  height: 50px;
+  box-shadow: $box-shadow;
+}
