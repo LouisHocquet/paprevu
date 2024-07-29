@@ -8,9 +8,13 @@
   </div>
   <div class="banner-action container">
     <h3>
-      <span>583 activités </span>
+      <span>
+        <%= @nb_activities %>
+        <%= @nb_activities > 1 ? "activités" : "activité" %>
+
+        </span>
       à Lille
     </h3>
-    <button class="btn btn-primary rounded-pill">Chercher</button>
+    <%= link_to "Activités", activities_path, class: "btn btn-primary rounded-pill" %>
   </div>
 </div>

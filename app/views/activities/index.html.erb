@@ -1,0 +1,23 @@
+<%= link_to "< Accueil", root_path %>
+
+<h1>Activités</h1>
+
+<ul>
+  <% @activities.each do |activity| %>
+    <li>
+      <%= link_to activity.name, activity_path(activity) %>
+        <div class="d-flex flex-row gap-2">
+          <%= link_to("Modifier", edit_activity_path(activity), class:"btn btn-primary px-3 py-2 rounded-3") %>
+          <%= link_to activity_path(activity), data: {
+            turbo_method: :delete,
+            turbo_confirm: "Supprimer l'activité' ?"
+          },
+          class: "btn btn-danger px-3 py-2 rounded-3" do %>
+            <i class="fa-solid fa-trash-can text-white"></i>
+          <% end %>
+        </div>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Créer", new_activity_path, class: "btn btn-primary rounded-pill" %>
