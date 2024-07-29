@@ -49,3 +49,9 @@
 .banner-action span {
   color: $primary;
 }
+
+.banner-action .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
