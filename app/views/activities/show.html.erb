@@ -1,0 +1,7 @@
+<%= link_to "< Toutes les activités", activities_path %>
+
+<h1><%= @activity.name %></h1>
+
+<p><%= @activity.description %></p>
+
+<%= link_to("Modifier", edit_activity_path(@activity), class:"btn btn-primary px-3 py-2 rounded-3") %>
