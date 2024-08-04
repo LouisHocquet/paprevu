@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   resources :activities
+  get "maps_sandbox", to: "pages#maps_sandbox", as: :maps_sandbox
 end
