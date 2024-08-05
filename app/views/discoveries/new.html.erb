@@ -1,0 +1,13 @@
+<h1>New Discovery</h1>
+
+<p>ID : <%= @discovery.id %></p>
+<p>Activity : <%= @discovery.activity.name %></p>
+
+<%= simple_form_for(@discovery) do |f| %>
+  <%= f.hidden_field :activity_id, value: @discovery.activity.id %>
+  <%= f.submit %>
+<% end %>
+
+<%# <%= link_to "Valider", {:controller => "discovery", :action => "create", :activity => @discovery.activity.id, method: :post } %>
+
+<%# <%= render "form" %>
