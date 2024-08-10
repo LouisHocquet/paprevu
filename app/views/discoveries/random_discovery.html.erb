@@ -1,0 +1,10 @@
+<h1>Random Discovery</h1>
+
+<p>ID : <%= @discovery.id %></p>
+<p>Activity : <%= @discovery.activity.name %></p>
+<p>Activity ID : <%= @discovery.activity.id %></p>
+
+<%= simple_form_for(@discovery) do |f| %>
+  <%= f.hidden_field :activity_id, value: @discovery.activity.id %>
+  <%= f.submit %>
+<% end %>

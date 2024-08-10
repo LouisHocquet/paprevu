@@ -7,20 +7,20 @@ class DiscoveriesController < ApplicationController
   def random_discovery
     @discovery = Discovery.new
     @discovery.activity = get_random_activity
-    @discovery.save
-    redirect_to discovery_path(@discovery)
+    # @discovery.save
+    # redirect_to discovery_path(@discovery)
   end
 
   def show
     @discovery = Discovery.find(params[:id])
   end
 
-  # def create
-  #   break;
-  #   @discovery = Discovery.new(discovery_params)
-  #   @discovery.save
-  #   redirect_to discovery_path(@discovery)
-  # end
+  def create
+    # break;
+    @discovery = Discovery.new(discovery_params)
+    @discovery.save
+    redirect_to discovery_path(@discovery)
+  end
 
   private
 

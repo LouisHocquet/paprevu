@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   resources :activities
-  resources :discoveries, only: [:show]
+  resources :discoveries, only: [:show, :index, :create]
   get "random_discovery", to: "discoveries#random_discovery", as: :random_discovery
   get "maps_sandbox", to: "pages#maps_sandbox", as: :maps_sandbox
 end
