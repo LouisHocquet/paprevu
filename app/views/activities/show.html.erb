@@ -4,6 +4,8 @@
 
 <p><%= @activity.description %></p>
 
-<%= cl_image_tag @activity.photo.key, height: 300, width: 400, crop: :fill %>
+<% if @activity.photo.attached? %>
+  <%= cl_image_tag @activity.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
 
 <%= link_to("Modifier", edit_activity_path(@activity), class:"btn btn-primary px-3 py-2 rounded-3") %>
