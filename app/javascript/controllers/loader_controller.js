@@ -13,7 +13,7 @@ export default class extends Controller {
     // console.log("hello from loader_controller.js :)")
     setTimeout(() => {
       this.switchToLoaderSuccessState()
-    }, 3000);
+    }, 5000);
 
   }
 
