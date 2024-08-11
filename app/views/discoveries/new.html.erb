@@ -4,10 +4,14 @@
 <p>Activity : <%= @discovery.activity.name %></p>
 <p>Activity ID : <%= @discovery.activity.id %></p>
 
-<%= simple_form_for(@discovery) do |f| %>
-  <%= f.hidden_field :activity_id, value: @discovery.activity.id %>
-  <%= f.submit %>
-<% end %>
+<div class="block-action container">
+  <%= simple_form_for(@discovery) do |f| %>
+    <%= f.hidden_field :activity_id, value: @discovery.activity.id %>
+    <%= f.submit value: "Cest parti !", class: "btn btn-primary rounded-pill" %>
+  <% end %>
+
+  <%= link_to "Relancer", loader_discovery_path, class: "btn btn-secondary rounded-pill" %>
+</div>
 
 <%# <%= link_to "Valider", {:controller => "discovery", :action => "create", :activity => @discovery.activity.id, method: :post } %>
 

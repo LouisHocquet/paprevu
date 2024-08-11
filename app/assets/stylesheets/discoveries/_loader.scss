@@ -16,6 +16,7 @@
   }
 
   .loader-success-img {
+    display: none;
     font-size: 80px;
     @include media-min($medium) {
       font-size: 100px;
@@ -23,7 +24,7 @@
   }
 
   .loader-action {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     max-width: 900px;
@@ -43,3 +44,10 @@
     }
   }
 }
+
+// .loader * {
+//   transition-property: all;
+//   transition-duration: 2s;
+//   transition-timing-function: ease-in;
+//   transition-delay: 2s;
+// }
