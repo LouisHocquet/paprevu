@@ -1,5 +1,11 @@
-<h1>Loading ...</h1>
-
-<%= image_tag "svg/rolling_loader.svg" %>
-
-<%= link_to "Révéler", new_discovery_path(activity_id: @activity.id), class: "btn btn-primary rounded-pill" %>
+<div class="loader" data-controller="loader">
+  <h1 data-loader-target="title">Ton activité arrive dans quelques secondes...</h1>
+  <%= image_tag "svg/rolling_loader.svg", class: "loader-pending-img",
+  :data => { "loader-target" => "pendingImg" } %>
+  <p class="loader-success-img", data-loader-target="successImg">🥳</p>
+  <div class="loader-action container", data-loader-target="successAction">
+    <%= link_to "Découvrir l'activité",
+    new_discovery_path(activity_id: @activity.id),
+    class: "loader-success-btn btn btn-primary rounded-pill" %>
+  </div>
+</div>
