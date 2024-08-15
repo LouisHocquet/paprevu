@@ -1,7 +1,8 @@
-<h1>Show Discovery</h1>
+<div class="discovery-show-container">
+  <h1>Tu as choisi le <span><%= @activity.name %></span>, c'est un super choix !</h1>
 
-<p>Discovery booked !!</p>
-
-<p>ID : <%= @discovery.id %></p>
-<p>Activity : <%= @discovery.activity.name %></p>
-<p>Activity ID : <%= @discovery.activity.id %></p>
+  <div class="msg-info">
+    <p>Paprévu ne gère pas encore les réservations, nous t’invitons donc à consulter
+      les horaires d’ouverture et à réserver cette activité par toi-même 😊</p>
+  </div>
+</div>

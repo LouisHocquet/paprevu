@@ -1,0 +1,14 @@
+<div class="activity-details-container">
+  <div class="activity-banner">
+    <% if @activity.photo.attached? %>
+      <%= cl_image_tag @activity.photo.key, crop: :fill %>
+    <% end %>
+    <h1><%= @activity.name %></h1>
+  </div>
+  <div class="activity-body">
+    <div class="activity-description">
+      <h2>Description</h2>
+      <p><%= @activity.description %></p>
+    </div>
+  </div>
+</div>

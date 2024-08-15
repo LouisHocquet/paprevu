@@ -1,0 +1,28 @@
+.discovery-show-container {
+  margin-top: 12vh;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  @include media-min($medium) {
+    gap: 32px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h1>span {
+    color: $primary;
+  }
+}
+
+.msg-info {
+  background-color: $primary-lightiest;
+  padding: 12px;
+  border-radius: 4px;
+  p {
+    margin: 0;
+  }
+}

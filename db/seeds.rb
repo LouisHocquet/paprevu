@@ -23,7 +23,7 @@ puts "=== Database clean! ==="
 puts "=== Adding activities... ==="
 
 params_run = {
-  name: "Run & Connect : Soirée Running à la Citadelle de Lille",
+  name: "Soirée Running à la Citadelle de Lille",
   description: "Envie de bouger tout en tissant de nouveaux liens ? Rejoins notre sortie running en soirée à
   la majestueuse Citadelle de Lille ! Profite d’un cadre exceptionnel où le sport et la convivialité s’entremêlent.
   Que tu sois un coureur aguerri ou un débutant enthousiaste, cette expérience est faite pour toi. Tu pourras te
@@ -39,8 +39,9 @@ activity_run.photo.attach(
 activity_run.save
 
 params_museum = {
-  name: "Date au Musée des Beaux Arts : Quand l’Art Fait son Show",
-  description: "Les gens pensent que les musées sont ringards ? Peut-être, mais tu lui feras croire que tu as de l’esprit !
+  name: "Quand l’Art Fait son Show",
+  description: "Les gens pensent que les musées sont ringards ? Peut-être, mais en l'emmenant au musée des Beaux Arts,
+  tu lui feras croire que tu as de l’esprit !
   Pour un premier date qui sort de l’ordinaire, pourquoi ne pas troquer le traditionnel verre en terrasse contre une virée
   culturelle au musée ? Promenez-vous entre les œuvres, échangez vos impressions (même si vous ne comprenez pas tout),
   et laissez l’art faire parler vos cœurs. C’est l’occasion parfaite pour montrer que tu as du goût… ou au moins que tu
@@ -55,7 +56,7 @@ activity_museum.photo.attach(
 activity_museum.save
 
 params_comedy_club = {
-  name: "Comedy Club à Lille : Rires & Rencontres",
+  name: "Rires & Rencontres",
   description: "Envie de rencontrer de nouvelles têtes tout en vous bidonnant ? Rejoignez-nous pour une soirée au Comedy Club
   de Lille avec un petit groupe de 4 à 5 personnes prêtes à partager des éclats de rire. Oubliez les awkward silences des
   premières rencontres, ici l’ambiance est à la décontraction totale. Les humoristes s’occupent de l’animation, et vous,
