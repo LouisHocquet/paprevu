@@ -1,8 +1,4 @@
-<h1>New Discovery</h1>
-
-<p>ID : <%= @discovery.id %></p>
-<p>Activity : <%= @discovery.activity.name %></p>
-<p>Activity ID : <%= @discovery.activity.id %></p>
+<%= render "shared/activity_details" %>
 
 <div class="block-action container">
   <%= simple_form_for(@discovery) do |f| %>

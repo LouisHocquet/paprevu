@@ -19,6 +19,7 @@ class DiscoveriesController < ApplicationController
 
   def show
     @discovery = Discovery.find(params[:id])
+    @activity = @discovery.activity
   end
 
   private
